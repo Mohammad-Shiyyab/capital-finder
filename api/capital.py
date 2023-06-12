@@ -31,7 +31,7 @@ class handler(BaseHTTPRequestHandler):
         url= 'https://restcountries.com/v3.1/name/'
         res = requests.get(url+cuntry)
         data = res.json()
-        capital=data[0]["capital"]
+        capital=data[0]["capital"][0]
         messaag=f' {capital} is the capital of {cuntry}'
     
       
