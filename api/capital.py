@@ -35,7 +35,7 @@ class handler(BaseHTTPRequestHandler):
         messaag=f' {capital} is the capital of {cuntry}'
     
       
-    self.wfile.write(str(messaag).encode())
+    self.wfile.write((messaag).encode())
     return
 
 
