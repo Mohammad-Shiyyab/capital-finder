@@ -26,13 +26,13 @@ class handler(BaseHTTPRequestHandler):
       messaag=f'the cuntry of {capital} is {cuntry}'
 
     #   print(222,data)
-    if 'cuntry' in my_dict:
-        cuntry = my_dict.get('cuntry')
-        url= 'https://restcountries.com/v3.1/name/'
-        res = requests.get(url+cuntry)
-        data = res.json()
-        capital=data[0]["capital"]
-        # messaag=f' {capital} is the capital of {cuntry}'
+    # if 'cuntry' in my_dict:
+    #     cuntry = my_dict.get('cuntry')
+    #     url= 'https://restcountries.com/v3.1/name/'
+    #     res = requests.get(url+cuntry)
+    #     data = res.json()
+    #     capital=data[0]["capital"]
+    #     messaag=f' {capital} is the capital of {cuntry}'
     
       
     self.wfile.write(str(cuntry).encode())
