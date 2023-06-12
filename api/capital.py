@@ -14,7 +14,7 @@ class handler(BaseHTTPRequestHandler):
     url_components = parse.urlsplit(url_path)
     query_list = parse.parse_qsl(url_components.query)
     my_dict = dict(query_list)
-    name=my_dict['name']
+    
 
     # print(111,my_dict)
     if 'capital' in my_dict:
