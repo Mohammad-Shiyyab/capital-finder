@@ -23,7 +23,7 @@ class handler(BaseHTTPRequestHandler):
       res = requests.get(url+capital)
       data = res.json()
       cuntry=data[0]["name"]["common"]
-      messaag=f'the cuntry of {capital} is {cuntry}'
+      # messaag=f'the cuntry of {capital} is {cuntry}'
 
     #   print(222,data)
     # if 'cuntry' in my_dict:
