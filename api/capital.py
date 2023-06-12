@@ -32,7 +32,7 @@ class handler(BaseHTTPRequestHandler):
         res = requests.get(url+cuntry)
         data = res.json()
         capital=data[0]["capital"]
-        messaag=f' {capital} is the capital of {cuntry}'
+        # messaag=f' {capital} is the capital of {cuntry}'
     
       
     self.wfile.write(str(cuntry).encode())
